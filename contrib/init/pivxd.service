@@ -1,0 +1,26 @@
+[Unit]
+Description=Apollon's distributed currency daemon
+After=network.target
+
+[Service]
+User=apollon
+Group=apollon
+
+Type=forking
+PIDFile=/var/lib/apollond/apollond.pid
+
+ExecStart=/usr/bin/apollond -daemon -pid=/var/lib/apollond/apollond.pid \
+          -conf=/etc/apollon/apollon.conf -datadir=/var/lib/apollond
+
+ExecStop=-/usr/bin/apollon-cli -conf=/etc/apollon/apollon.conf \
+         -datadir=/var/lib/apollond stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

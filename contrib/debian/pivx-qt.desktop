@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Apollon
+Comment=Apollon P2P Cryptocurrency
+Comment[fr]=Apollon, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Apollon, eşten eşe kriptografik sanal para birimi
+Exec=apollon-qt %u
+Terminal=false
+Type=Application
+Icon=apollon128
+MimeType=x-scheme-handler/apollon;
+Categories=Office;Finance;
