@@ -172,10 +172,10 @@ public:
         assert(hashGenesisBlock == uint256("0x00000a0e5cfebfd4c7964b91eb077ae5733745ce3ae5d1775c3e6c660a360653"));
         assert(genesis.hashMerkleRoot == uint256("0x54035970cf6c65b614ef76dd55da5b0b13b7f24d5faf0d78a87b57134ba35047"));
 
-        vSeeds.push_back(CDNSSeedData("apolloncoin.io", "seed.apolloncoin.io"));     // Primary DNS Seeder 
-        vSeeds.push_back(CDNSSeedData("0", "52.32.174.206"));
-        vSeeds.push_back(CDNSSeedData("1", "35.162.219.114"));
-        vSeeds.push_back(CDNSSeedData("2", "52.41.181.185"));
+        //vSeeds.push_back(CDNSSeedData("apolloncoin.io", "seed.apolloncoin.io"));     // Primary DNS Seeder 
+        //vSeeds.push_back(CDNSSeedData("0", "52.32.174.206"));
+       // vSeeds.push_back(CDNSSeedData("1", "35.162.219.114"));
+       // vSeeds.push_back(CDNSSeedData("2", "52.41.181.185"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 85);
@@ -275,10 +275,10 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "apollon-testnet.seed.fuzzbawls.pw"));
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "apollon-testnet.seed2.fuzzbawls.pw"));
-        vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net"));
-        vSeeds.push_back(CDNSSeedData("88.198.192.110", "88.198.192.110"));
+       // vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "apollon-testnet.seed.fuzzbawls.pw"));
+       // vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "apollon-testnet.seed2.fuzzbawls.pw"));
+       // vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net"));
+       // vSeeds.push_back(CDNSSeedData("88.198.192.110", "88.198.192.110"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet apollon addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet apollon script addresses start with '8' or '9'
