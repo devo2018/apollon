@@ -132,10 +132,10 @@ public:
         // nModifierUpdateBlock = 615800; // removed
         nZerocoinStartHeight = 2727272727; // too interwoven in the codebase for now.. just set it to int.max
         nZerocoinStartTime = 2727272727; // too interwoven in the codebase for now.. let's fix it with the other year 2038 problems
-        nBlockEnforceSerialRange = 2727272727; // same as above
-        nBlockRecalculateAccumulators = 2727272727; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 2727272727; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 2727272727; //Last valid accumulator checkpoint
+        nBlockEnforceSerialRange = 1; // same as above
+        nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = ~1; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
         // nBlockEnforceInvalidUTXO = 902850; // removed
         // nInvalidAmountFiltered = 268200*COIN; // removed
         nBlockZerocoinV2 = 2727272727; // too interwoven in the codebase for now.. just set it to int.max
